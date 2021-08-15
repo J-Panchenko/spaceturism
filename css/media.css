@@ -1,0 +1,134 @@
+@media(max-width:1020px) {
+    .login {
+        margin-right: 0;
+    }
+}
+
+@media(max-width:880px) {
+    .header__top {
+        padding-top: 30px;
+    }
+
+    .menu__btn {
+        display: block;
+    }
+
+    .menu__list {
+        display: block;
+        position: absolute;
+        top: 80px;
+        left: 30px;
+        background-color: #010203;
+        width: 200px;
+        padding: 10px 20px;
+        border-radius: 20px;
+        transform:translateX(-150%);
+        transition: transform .7s;
+    }
+
+    .menu__list.active {
+        transform:translate(0);
+    }
+
+    .menu__item {
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .phone {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .header__content {
+        text-align: center;
+    }
+
+    .header__btn {
+        width: 80%;
+    }
+
+    .header__description {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width:620px) {
+
+    .title {
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    .header {
+        background-position: center right;
+    }
+
+    .header__title {
+        font-size: 34px;
+        line-height: 34px;
+    }
+
+    .header__title span {
+        font-size: 60px;
+    }
+
+    .header__text {
+        flex-direction: column;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .header__btn {
+        font-size: 18px;
+        line-height: 24px;
+        width: 60%;
+    }
+
+    .about__table {
+        width: 100%;
+    }
+
+}
+
+@media(max-width:470px) {
+
+    .header__title {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .header__title span {
+        font-size: 32px;
+    }
+
+    .header__text {
+        flex-direction: column;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .header__btn {
+        font-size: 12px;
+        line-height: 14px;
+        width: 80%;
+    }
+
+    .header__description {
+        display: block;
+        text-align: center;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .header__description-text {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .header__description-text + .header__description-text {
+        margin-left: 0;
+    }
+}

@@ -91,8 +91,46 @@ body {
     
 }
 
+.menu__btn {
+    display: none;
+    padding: 0 15px;
+    width: 50px;
+    height: 30px;
+}
+
+.menu__btn span {
+    display: block;
+    width: 50px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #fff;
+    position: relative;
+}
+
+.menu__btn span::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 50px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+.menu__btn span::after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 50px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
 .header {
-    background-image: url('../images/header-bg.jpg');
+    background-image: url(../images/header-bg.jpg);
     background-position: top center;
     background-color: black;
     background-repeat: no-repeat;
@@ -148,7 +186,6 @@ body {
 
 .header__content {
     max-width: 600px;
-    margin-top: 5%;
 }
 
 .header__title {
@@ -217,7 +254,7 @@ body {
 }
 
 .about {
-    background-image: url('../images/about-bg.jpg');
+    background-image: url(../images/about-bg.jpg);
     background-color: black;
     background-repeat: no-repeat;
     background-position: top center;
@@ -261,7 +298,7 @@ body {
     line-height: 14px;
     font-weight: normal;
     text-transform: uppercase;
-    color: #036CCA;
+    color: #CB0E0E;
     margin-bottom: 30px;
 }
 
@@ -328,7 +365,7 @@ body {
 }
 
 .programs-description {
-    background-image: url('../images/prog-descr-bg.jpg');
+    background-image: url(../images/prog-descr-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
@@ -395,7 +432,7 @@ body {
 }
 
 .to-book {
-    background-image: url('../images/to-book-bg.jpg');
+    background-image: url(../images/to-book-bg.jpg);
     background-color: black;
     background-position: top center;
     background-size: cover;
@@ -422,7 +459,7 @@ body {
 }
 
 .offers-and-services {
-    background-image: url('../images/offers-and-services-bg.jpg');
+    background-image: url(../images/offers-and-services-bg.jpg);
     background-position: top center;
     background-size: cover;
     background-color: black;
@@ -621,10 +658,6 @@ body {
     padding-bottom: 46px;
 }
 
-.support__feedback {
-
-}
-
 .support__feedback-text {
     width: 450px;
     font-size: 24px;
@@ -636,11 +669,10 @@ body {
 
 .support__feedback-form {
     width: 500px;
-    display: flex;
-    flex-direction: column;
 }
 
 .support__feedback-form__input {
+    width: 100%;
     margin-bottom: 40px;
     background-color: #010203;
     border: none;
@@ -665,8 +697,9 @@ body {
     outline: none;
 }
 
-.support__feedback-form__input:last-of-type {
-    margin-bottom: 70px;
+.support__feedback-form__btn {
+    margin-top: 40px;
+    width: 100%;
 }
 
 .support__warranties {
@@ -696,7 +729,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 100px;
-    padding-bottom: 125px;
+    padding-bottom: 150px;
 }
 
 .footer__inner {
@@ -711,8 +744,8 @@ body {
 
 }
 
-.footer__text:first-of-type {
-    margin-bottom: 50px;
+.footer__text + .footer__text {
+    margin-top: 50px;
 }
 
 .menu__footer {
@@ -736,15 +769,18 @@ body {
     font-family: 'Roboto', sans-serif;;
     font-weight: normal;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 20px;
     text-transform: uppercase; 
 }
 
 .footer__contact-item {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
 }
 
-.contact-phone {
-    font-size: 19px;
+.contact-link {
+    transition: color .5s;
+}
+
+.contact-link:hover {
     color: #CB0E0E;
 }
