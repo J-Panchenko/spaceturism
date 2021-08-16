@@ -743,7 +743,7 @@
 }
 
 @media(max-width:380px) {
-    
+
     .additional-services__btn--first::before {
         bottom: 68%;
         left: 20%;
@@ -764,7 +764,7 @@
     }
 
     .footer {
-        padding-bottom: 170px;
+        padding-bottom: 200px;
     }
 
     .menu__footer,
