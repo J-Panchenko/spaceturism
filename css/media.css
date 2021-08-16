@@ -1,10 +1,181 @@
+@mediA(max-width:1160px) {
+
+    .button {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .special-offer__btn,
+    .support__feedback-form__btn {
+        width: 100%;
+    }
+
+    .support__feedback-form__btn {
+        margin-top: 30px;
+    }
+    
+    .additional-services__btn--first {
+        margin-bottom: 50px;
+    }
+
+    .about {
+        text-align: center;
+    }
+
+    .about__item {
+        display: block;
+    }
+
+    .about__content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .about__content-text {
+        justify-content: center;
+    }
+
+    .about__content-text p {
+        width: 100%;
+        margin-right: 15px;
+    }
+
+    .additional-services__btn--first::before {
+        bottom: 60%;
+        left: 40%;
+    }
+}
+
+@media(max-width:1053px) {
+
+    .special-offer__inner {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .special-offer__item {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .special-offer__description {
+        display: block;
+        margin-bottom: 50px;
+        padding: 20px;
+        height: auto;
+    }
+
+    .special-offer__text {
+        width: 80%;
+        margin: 30px auto 120px;
+    }
+
+    .special-offer__price {
+        margin: 0 auto 30px;
+    }
+
+    .special-offer__old-price {
+        margin: 0 30px 0 auto;
+    }
+
+    .special-offer__new-price {
+        margin: 0 auto;
+    }
+
+    .additional-services__content {
+        font-size: 21px;
+        line-height: 22px;
+    }
+
+    .additional-services__list-item::before {
+        width: 15px;
+        height: 15px;
+    }
+
+    .additional-services__btn--first::before {
+        bottom: 70%;
+        left: 34%;
+    }
+
+    .slider__box-img {
+        max-width: 90%;
+    }
+}
+
 @media(max-width:1020px) {
+
+    .title {
+        text-align: center;
+    }
+
     .login {
         margin-right: 0;
+    }
+
+    .to-book {
+        background-position: top left 20%;
+    }
+
+    .to-book__inner {
+        display: block;
+    }
+
+    .to-book__text {
+        width: 70%;
+        margin-top: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        box-shadow: 2px 2px 15px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .to-book__text + .to-book__text {
+        margin: 50px auto 0;
+    }
+
+    .support__feedback-text {
+        width: 70%;
+        margin: 0 auto 50px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .support__feedback-form {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .support__feedback-form__input {
+        margin-bottom: 20px;
+    }
+
+    .support__inner {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .support__warranties {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .support__warranties-text {
+        font-size: 18px;
+        line-height: 21px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .footer {
+        padding-bottom: 100px;
     }
 }
 
 @media(max-width:880px) {
+
     .header__top {
         padding-top: 30px;
     }
@@ -53,9 +224,108 @@
         justify-content: center;
         align-items: center;
     }
+
+    .programs-description {
+        padding-bottom: 20px;
+    }
+
+    .programs-description__box svg {
+        display: none;
+    }
+
+    .programs-description__box-list {
+        display: block;
+        list-style: none;
+        width: 440px;
+        margin: 0 auto;
+        
+    }
+
+    .programs-description__box-item {
+        margin-bottom: 50px; 
+        transition: all 0.5s;
+        position: relative;
+    }
+
+    .programs-description__box-item:not(:last-child)::after{
+        content: ' \2193';
+        position: absolute;
+        top: 35px;
+        right: 50%;
+        left: 50%;
+    }
+
+    .programs-description__box-item:nth-last-child(2)::after{
+        top: 140%;
+    }
+
+    .programs-description__box-item:hover {
+        margin-bottom: 40px;
+        font-size: 24px;
+        line-height: 26px;
+        color: #CB0E0E;
+    }
+
+    .programs-description__box-item:nth-last-child(2):hover {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .additional-services {
+        padding-bottom: 80px;
+    }
+
+    .special-offer__item {
+        width: 82%;
+    }
+
+    .special-offer__text {
+        margin-bottom: 90px;
+    }
+
+    .additional-services__content {
+        font-size: 18px;
+        line-height: 19px;
+    }
+
+    .additional-services__list-item::before {
+        width: 10px;
+        height: 10px;
+    }
+
+    .additional-services__btn--first::before {
+        bottom: 75%;
+        left: 0;
+    }
+
+    .slider__inner {
+        padding: 75px 0;
+    }
 }
 
 @media(max-width:620px) {
+
+    .title {
+        padding: 50px 0;
+        font-size: 38px;
+        line-height: 38px;
+    }
+
+    .button {
+        font-size: 14px;
+        line-height: 16px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .support__feedback-form__btn {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .special-offer__btn {
+        width: 100%;
+    }
 
     .title {
         font-size: 36px;
@@ -87,13 +357,218 @@
         width: 60%;
     }
 
+    .about__item {
+        padding-bottom: 100px;
+    }
+
+    .about__content-text {
+        display: block;
+        margin: 0 auto 20px auto;
+        width: 90%;
+        text-align: center;
+
+    }
+
+    .about__content-text p {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 10px;
+    }
+
     .about__table {
         width: 100%;
     }
 
+    .about__table-row:first-child {
+        display: none;
+    }
+
+    .about__table-column {
+        display: block;
+        text-align: right;
+        font-size: 24px;
+        line-height: 26px;
+        padding: 10px 20px;
+        border-bottom: 1px solid #fff;
+    }
+
+    .about__table-column:last-child {
+        border: none;
+    }
+
+    .about__table-column span {
+        display: inline-block;
+
+    }
+
+    .about__table-column::before {
+        content: attr(aria-label);
+        float: left;
+    }
+
+    .to-book__text {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .offers-and-services {
+        padding-bottom: 50px;
+        text-align: center;
+    }
+
+    .special-offer__item {
+        width: 85%;
+    }
+
+    .special-offer__text {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .special-offer__old-price {
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .special-offer__old-price::before {
+        right: initial;
+    }
+
+    .special-offer__new-price {
+        font-size: 36px;
+        line-height: 30px;
+        margin: 0;
+        width: 100%;
+    }
+
+    .additional-services__inner {
+        display: block;
+    }
+
+    .additional-services__content {
+        max-width: 80%;
+        margin: 0 auto 120px auto;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .additional-services__buttons {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .additional-services__btn {
+        width: 100%;
+    }
+
+    .additional-services__btn--first {
+        margin-bottom: 30px;
+    }
+
+    .additional-services__btn--first::before {
+        bottom: 60%;
+        left: 50%;
+    }
+
+    .slider__inner {
+        padding: 50px 0;
+    }
+
+    .slider__arrow {
+        width: 50px;
+    }
+
+    .slider__description {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .support {
+        padding-bottom: 20px;
+    }
+
+    .support__feedback-text {
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 30px;
+    }
+
+    .support__feedback-form {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .support__warranties-text {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .support__warranties-text::before {
+        background-size: contain;
+        width: 350px;
+        height: 356px;
+    }
+
+    .footer {
+        padding-top: 50px;
+        padding-bottom: 200px;
+    }
+
+    .footer__inner {
+        display: block;
+    }
+
+    .footer__texts {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .footer__text + .footer__text {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .menu__footer,
+    .footer__contact-list {
+        width: 50%;
+        margin: 0;
+        padding: 10px; 
+    }
+
+    .menu__footer {
+        text-align: left;
+        float: left;
+    }
+
+    .footer__contact-list {
+        text-align: right;
+        float: right;
+    }
+
+    .menu__footer-item,
+    .footer__contact-item {
+        margin-bottom: 10px;
+    }
+
+    .contact-link,
+    .menu__footer-link {
+        font-size: 16px;
+        line-height: 18px;
+    }
 }
 
 @media(max-width:470px) {
+
+    .title {
+        padding: 30px 0;
+        font-size: 24px;
+        line-height: 24px;
+    }
 
     .header__title {
         font-size: 24px;
@@ -130,5 +605,184 @@
 
     .header__description-text + .header__description-text {
         margin-left: 0;
+    }
+
+    .about__item {
+        padding-bottom: 50px;
+    }
+
+    .about__item:last-child {
+        padding-bottom: 50px;
+    }
+
+    .about__table-column {
+        font-size: 18px;
+        line-height: 21px;
+        padding: 10px;
+    }
+
+    .programs-description__box-list {
+        width: 300px;    
+    }
+
+    .programs-description__box-item {
+        margin-bottom: 30px; 
+    }
+
+    .programs-description__box-item:hover {
+        margin-bottom: 40px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .programs-description__box-item:nth-last-child(2):hover {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .programs-description__box-item:not(:last-child)::after{
+        top: 20px;
+    }
+
+    .programs-description__box-item:nth-last-child(2)::after{
+        top: 120%;
+    }
+
+    .to-book__text {
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .offers-and-services {
+        padding-bottom: 20px;
+    }
+
+    .special-offer__inner {
+        width: 100%;
+    }
+
+    .special-offer__item {
+        width: 90%;
+    }
+    
+    .additional-services__content {
+        max-width: 80%;
+        margin: 0 auto 140px auto;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .additional-services__list-item::before {
+        left: 15px;
+        width: 8px;
+        height: 8px;
+    }
+
+    .additional-services__btn--first::before {
+        bottom: 60%;
+        left: 24%;
+    }
+
+    .slider__arrow {
+        width: 60px;
+        top: 110%;
+    }
+
+    .slider__description {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .support {
+        padding-bottom: 10px;
+    }
+
+    .support__feedback-text {
+        margin-bottom: 0;
+    }
+
+    .support__feedback-form {
+        width: 100%;
+    }
+
+    .support__feedback-form__input {
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 0;
+    }
+
+    .support__feedback-form__input::placeholder {
+        font-size: 10px;
+        line-height: 11px;
+    }
+
+    .support__feedback-text {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .support__warranties-text {
+        min-height: 350px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .support__warranties-text::before {
+        width: 300px;
+        height: 306px;
+        top: 80px;
+    }
+
+    .contact-link,
+    .menu__footer-link {
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+
+@media(max-width:380px) {
+    
+    .additional-services__btn--first::before {
+        bottom: 68%;
+        left: 20%;
+    }
+
+    .slider__inner {
+        padding: 40px 0;
+    }
+
+    .to-book__text {
+        text-align: right;
+    }
+
+    .support__feedback-text,
+    .support__warranties-text {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .footer {
+        padding-bottom: 170px;
+    }
+
+    .menu__footer,
+    .footer__contact-list {
+        padding: 5px; 
+    }
+
+    .footer__text {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .footer__text + .footer__text {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .support__warranties-text::before {
+        right: -50px;
     }
 }

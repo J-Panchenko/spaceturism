@@ -272,7 +272,7 @@ body {
     flex-direction: row-reverse;
 }
 
-.about__item:last-of-type {
+.about__item:last-child {
     padding-bottom: 100px;
 }
 
@@ -431,6 +431,10 @@ body {
     height: 100px;
 }
 
+.programs-description__box-list {
+    display: none;
+}
+
 .to-book {
     background-image: url(../images/to-book-bg.jpg);
     background-color: black;
@@ -479,7 +483,7 @@ body {
 }
 
 .special-offer__description {
-    min-height: 400px;
+    height: 400px;
     border: 1px solid #fff;
     padding: 40px 140px;
     margin-bottom: 25px;
@@ -548,7 +552,7 @@ body {
     justify-content: space-between;
 }
 
-.additional-services___content {
+.additional-services__content {
     font-family: 'sf-pro-display';
     font-weight: normal;
     font-size: 24px;
@@ -605,7 +609,7 @@ body {
     content: url(../images/astronaut.png);
     position: absolute;
     bottom: 37px;
-    left: 307px;
+    left: 285px;
 }
 
 .slider {
@@ -704,6 +708,7 @@ body {
 
 .support__warranties {
     width: 600px;
+    padding-left: 50px;
 }
 
 .support__warranties-text {
@@ -716,7 +721,10 @@ body {
 }
 
 .support__warranties-text::before {
-    content: url(../images/elonswarranty.png);
+    content: '';
+    background-image: url(../images/elonswarranty.png);
+    width: 396px;
+    height: 402px;
     position: absolute;
     right: 4px;
     top: 116px;
