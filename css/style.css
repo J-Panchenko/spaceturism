@@ -25,7 +25,8 @@
 @font-face {
     font-family: 'spaceagecyrillic';
     src: url('../fonts/spaceagecyrillic-regular.woff2') format('woff2'),
-         url('../fonts/spaceagecyrillic-regular.woff') format('woff');
+         url('../fonts/spaceagecyrillic-regular.woff') format('woff'),
+         url('../fonts/space_age_cyrillic.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
     font-display: swap;
